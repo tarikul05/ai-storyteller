@@ -1,0 +1,9 @@
+openai>=1.0.0
+python-dotenv
+fastapi
+uvicorn
+elevenlabs
+pygame
+pillow
+pydantic
+python-multipart
