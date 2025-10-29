@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.cors import CORSMiddleware
 from models import StoryRequest, StoryResponse
 from story_generator import StoryGenerator
 from text_to_speech import TextToSpeech
@@ -9,6 +10,13 @@ import os
 from pathlib import Path
 
 app = FastAPI(title="Magic Storyteller Agent", version="1.0.0")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3030"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Mount storage for serving files
 app.mount("/storage", StaticFiles(directory="storage"), name="storage")
