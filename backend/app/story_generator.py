@@ -2,7 +2,7 @@ import openai
 import json
 import uuid
 from datetime import datetime
-from config import Config
+from backend.app.config import Config
 from models import StoryRequest, StoryResponse
 
 class StoryGenerator:

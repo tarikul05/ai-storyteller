@@ -3,7 +3,7 @@ backend/node_modules/
 backend/dist/
 backend/app/__pycache__/*
 backend/storage/images/*
-backend/storage/audio/*
+backend/storage/stories/*
 frontend/.env
 frontend/node_modules/
 frontend/build/
