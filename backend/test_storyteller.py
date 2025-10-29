@@ -3,7 +3,7 @@ import json
 
 # Test the story generation
 def test_story_generation():
-    base_url = "http://localhost:8000"
+    base_url = "http://localhost:8009"
     
     story_request = {
         "child_name": "Lily",
