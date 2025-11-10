@@ -4,6 +4,12 @@ backend/dist/
 backend/app/__pycache__/*
 backend/storage/images/*
 backend/storage/stories/*
+# node backend
+backend-node/node_modules/*
+backend-node/.env
+backend-node/storage/images/*
+backend-node/storage/stories/*
+
 frontend/.env
 frontend/node_modules/
 frontend/build/
